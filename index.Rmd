@@ -1,0 +1,21 @@
+---
+title: "Mayuri Albal"
+output: 
+  html_document:
+    toc: true
+    toc_float: false
+    collapsed: false
+    smooth_scroll: true
+    theme: cosmo
+---
+![](images/welcome.png)
+[About Me](about.html)
+
+
+# Introduction
+
+Welcome to my page! My name is Mayuri Albal and I am 
+a graduate student at Mailman School of Public Health. Currently, I am in the Epidemiology department with a certificate in Global Health. My background is in cognitive psychology,
+but having the opportunity to merge this with Epidemiology on a global scale has been a large part of my coursework. There is information regarding my previous experiences as well as links to my sites!
+
+

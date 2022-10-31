@@ -1,0 +1,81 @@
+---
+title: "About Me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+---
+
+
+
+
+
+![](images/background.png)
+
+## Education
+Columbia University Mailman School of Public Health New York, New York
+Master of Public Health  Epidemiology, Global Health Certificate				
+May 2023
+
+Wake Forest University Winston-Salem, North Carolina                
+Bachelor of Arts in Psychology 							                          	
+May 2021
+Honors: magna cum laude
+
+## Experience
+*ICAP Columbia University Mailman School of Public Health, Data Analyst May 2022 – September 2022*
+
++ Researched underlying factors of adolescent HIV+ risk in Population-Based HIV Impact Assessments (PHIA) countries to understand preventative measures to implement in current education initiatives
++ Conducted literature review by reading 100+ journal articles to assess gaps in adolescent HIV risk
++	Cleaned raw data from 50+ files based on PHIA country surveys and crafted multi-country analysis for final report
++ Coded and programmed new analyst systems for data cleaning
++ Presented research to analysts at University of Cape Town for future preventative measures
++ Authored a paper focusing on Adolescent Risk for HIV+
++ Preliminary analysis, presented at conference in Brazil for global action towards child HIV+ (June 2022)
+
+*International Parent Advocacy Network, Child Welfare Intern Remote			May 2022 - August 2022*
+
++ Evaluated and drafted articles relating to prominent issues in the child welfare system for IPAN Library and Newsletters
++ Organized literature review based on the current child welfare system
++	Assessed current gaps on knowledge regarding parental advocacy
++	Authored 2+ papers for IPAN’s library regarding the Adoption and Safe Families Act (ASFA) and International Adoption
+
+*Wake Forest University, Research Assistant, Winston Salem, North Carolina			September 2018- September 2021*
+
++	Devised and implemented 2-year study, with 300+ participants on Location Independent Flexibility in the general population
++	Collected and completed data analysis for a Visual Search study focused upon task shifting and cognitive flexibility 
++	Supervised and monitored completion of experiments with participants  
++	Created and conducted new research based upon attentional shift with the use of eye tracking technology 
++	Managed and trained 10 research assistants as well as oversaw other experiments being conducted onsite in lab setting 
++	Presented research at Psychonomic Society Conference 
++	Co-Authored a research paper focusing on Attentional Shifting (Published in Attention, Perception, and Psychophysics)
++	Gained experience with IRB and study approval process, CITI certified from 2018 to present
+
+*Wake Forest University, Research Assistant, Winston-Salem, North Carolina 		May 2020 – August 2021* 
+
++	Synthesized prior research regarding law review and internal college structures 
++	Provided recommendations on ideal ways that college boards should be established 
++	Presented work to college Greek Life organizations as well as the Dean of Students 
++	Aided in communication between students and college officials in regard to COVID-19 practices 
+
+## Leadership Experience
+
+*Wake Forest University Dean’s Office, Board of Investigators and Advisors                        September 2019 – May 2021 *	
+
++ Served as an advisor for misconduct cases and counseled 100+ students and organizations through university held conduct trials while gaining experience working with University Officials, Law Enforcement, and Legal Teams
++	Awarded highest case count and resolution throughout the position
+
+## Skills
+
+*Languages:* Marathi and French, Moderate Working Proficiency  
+
+*Data Analysis Tools:* R-Studio for data analysis, SPSS, SAS, MATLAB, Data Viewer Software, PsychoPy, GIS 
+
+## Research Publications
+
++ Sali, A. W., Ma, R., Albal, M. S., & Key, J. (2022). The location independence of learned attentional flexibility. Attention, Perception, & Psychophysics, 84(3), 682-699
+
+
+
+

@@ -1,0 +1,55 @@
+---
+title: "hw_4"
+author: "Mayuri Albal"
+date: "2022-10-31"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+```
+
+```{r}
+ny_noaa_3 =
+ny_noaa %>% 
+  janitor::clean_names() %>% 
+  separate(date, c("year", "month", "day"), sep = "-") %>%
+  mutate(
+    year= as.numeric(year),
+    month= as.numeric(month),
+    day=as.numeric(day),
+   tmin= as.numeric(tmin),
+   tmax= as.numeric(tmax),
+   snow= as.numeric(snow),
+    tmin= tmin/10,
+    tmax = tmax/10,
+    prcp = prcp/10
+  )
+skimr::skim(ny_noaa)
+```
+
+Sample
+
+```{r}
+samp_noaa= 
+ny_noaa_3 %>% 
+  sample_n(1000) 
+```
+
+
+Scatterplot
+
+```{r}
+samp_noaa %>%
+  mutate(text_label = str_c(tmax, month)) %>% 
+  plot_ly(
+    x = ~tmax, y = ~month, type = "scatter", mode = "markers",
+    color = ~tmax, text = ~text_label, alpha = 0.5)
+```
+
