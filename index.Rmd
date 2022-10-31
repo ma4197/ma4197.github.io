@@ -1,5 +1,5 @@
 ---
-title: "Mayuri Albal"
+title: "Mayuri Albal- P8105 Website"
 output: 
   html_document:
     toc: false
