@@ -53,3 +53,19 @@ samp_noaa %>%
     color = ~tmax, text = ~text_label, alpha = 0.5)
 ```
 
+
+Boxplot
+
+```{r}
+samp_noaa %>% 
+  plot_ly(x= ~month, y = ~tmin, color = ~tmin, type = "box", colors = "viridis")
+```
+
+
+Barchart
+
+```{r}
+samp_noaa %>% 
+  plot_ly(x = ~year, y = ~snow, color = ~snow, type = "bar", colors = "viridis")
+```
+

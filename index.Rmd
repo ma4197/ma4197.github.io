@@ -8,9 +8,8 @@ output:
     smooth_scroll: true
     theme: cosmo
 ---
-![](images/welcome.png)
-[About Me](about.html)
 
+![](images/welcome.png)
 
 # Introduction
 

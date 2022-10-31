@@ -1,0 +1,80 @@
+---
+title: "Plotly"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tibble)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+```{r, include= FALSE}
+ny_noaa_3 =
+ny_noaa %>% 
+  janitor::clean_names() %>% 
+  separate(date, c("year", "month", "day"), sep = "-") %>%
+  mutate(
+    year= as.numeric(year),
+    month= as.numeric(month),
+    day=as.numeric(day),
+   tmin= as.numeric(tmin),
+   tmax= as.numeric(tmax),
+   snow= as.numeric(snow),
+    tmin= tmin/10,
+    tmax = tmax/10,
+    prcp = prcp/10
+  )
+skimr::skim(ny_noaa)
+```
+
+```{r, include= FALSE}
+samp_noaa= 
+ny_noaa_3 %>% 
+  sample_n(1000) 
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Max Temperature By Month
+
+```{r}
+samp_noaa %>%
+  mutate(text_label = str_c(tmax, month)) %>% 
+  plot_ly(
+    x = ~tmax, y = ~month, type = "scatter", mode = "markers",
+    color = ~tmax, text = ~text_label, alpha = 0.5)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Minimum Temperature By Year
+
+```{r}
+samp_noaa %>% 
+  mutate(
+    year= as.character(year)) %>% 
+  plot_ly(x= ~year, y = ~tmin, color = ~year, type = "box", colors = "viridis")
+```
+
+### Total Snowfall By Year
+
+```{r}
+samp_noaa %>% 
+  filter(0 < snow) %>% 
+  group_by(year) %>% 
+  mutate(snow= snow*0.039371,
+         snowed= sum(snow),
+    years = as.character(year))%>% 
+  plot_ly(x = ~years, y = ~snowed, color = ~snowed, type = "bar", colors = "viridis")
+```
+
+
