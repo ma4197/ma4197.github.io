@@ -65,15 +65,16 @@ samp_noaa %>%
   plot_ly(x= ~year, y = ~tmin, color = ~year, type = "box", colors = "viridis")
 ```
 
-### Total Snowfall By Year
+### Total Snowfall (in) By Year
 
 ```{r}
 samp_noaa %>% 
   filter(0 < snow) %>% 
   group_by(year) %>% 
-  mutate(snow= snow*0.039371,
-         snowed= sum(snow),
-    years = as.character(year))%>% 
+  mutate(
+    snow = snow*0.039371) %>% 
+  summarize(snowed= sum(snow)) %>% 
+  mutate(years = as.character(year)) %>% 
   plot_ly(x = ~years, y = ~snowed, color = ~snowed, type = "bar", colors = "viridis")
 ```
 
